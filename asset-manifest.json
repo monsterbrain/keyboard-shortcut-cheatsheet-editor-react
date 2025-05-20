@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.6b3acff8.css",
+    "main.js": "/keyboard-shortcut-cheatsheet-editor-react/static/js/main.39ab10ec.js",
+    "static/js/453.b4f623e0.chunk.js": "/keyboard-shortcut-cheatsheet-editor-react/static/js/453.b4f623e0.chunk.js",
+    "index.html": "/keyboard-shortcut-cheatsheet-editor-react/index.html",
+    "main.6b3acff8.css.map": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.6b3acff8.css.map",
+    "main.39ab10ec.js.map": "/keyboard-shortcut-cheatsheet-editor-react/static/js/main.39ab10ec.js.map",
+    "453.b4f623e0.chunk.js.map": "/keyboard-shortcut-cheatsheet-editor-react/static/js/453.b4f623e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b3acff8.css",
+    "static/js/main.39ab10ec.js"
+  ]
+}
