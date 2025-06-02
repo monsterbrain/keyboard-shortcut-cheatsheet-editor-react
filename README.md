@@ -2,6 +2,12 @@
 
 This project is a React-based application that allows users to create, edit, and manage keyboard shortcut cheatsheets. It provides an intuitive interface for adding, organizing, and exporting shortcuts.
 
+---
+
+**Live Demo:** [https://monsterbrain.github.io/keyboard-shortcut-cheatsheet-editor-react](https://monsterbrain.github.io/keyboard-shortcut-cheatsheet-editor-react)
+
+---
+
 ## Current Features
 
 *   **Edit Table Title:** Customize the title of your shortcut cheatsheet.
