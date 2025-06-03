@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Or your default branch if not main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Specify your project's Node.js version
+
+      - name: Install dependencies
+        run: npm install # Or yarn install if your project uses Yarn
+
+      - name: Build application
+        run: npm run build # Or yarn build
+        # Ensure this command outputs to a 'build' or 'dist' folder,
+        # or update the deploy step's 'publish_dir' accordingly.
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build # Adjust if your build output is in a different directory (e.g., ./dist)
+          # Optional: if your site is not at the root of the gh-pages branch (e.g., username.github.io/repo-name)
+          # then you might need to set the base path in your React app's package.json:
+          # "homepage": "http://username.github.io/repo-name"
+          # and configure your router accordingly if using client-side routing.
