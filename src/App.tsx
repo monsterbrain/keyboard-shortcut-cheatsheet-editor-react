@@ -47,8 +47,13 @@ function App() {
       const [editingId, setEditingId] = useState<string | null>(null);
       const editingInputRef = useRef<HTMLInputElement>(null);
       const [isPreview, setIsPreview] = useState(false);
+      const [theme, setTheme] = useState('light');
   
   
+      const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+      };
+
       const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
           setTitle(event.target.value);
       };
@@ -135,6 +140,15 @@ function App() {
               editingInputRef.current.focus();
           }
       }, [editingId]);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+  }, [theme]);
 
       const generateHTML = () => {
       }
@@ -277,6 +291,9 @@ function App() {
                 <div className="text-center flex gap-4 justify-center">
                     <Button onClick={() => setIsPreview(!isPreview)}>
                         {isPreview ? <><EyeOff className="mr-2 h-4 w-4" /> Edit</> : <><Eye className="mr-2 h-4 w-4" /> Preview</>}
+                    </Button>
+                    <Button onClick={toggleTheme}>
+                        {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
                     </Button>
                     <Button className="mr-2" onClick={generateHTML}>Export to HTML</Button>
                     <Button variant="secondary" onClick={generateMarkdown}>Export to Markdown</Button>
