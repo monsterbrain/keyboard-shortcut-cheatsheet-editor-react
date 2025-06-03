@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './app/globals.css';
-import React, { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
     Table,
     TableBody,
@@ -20,12 +19,6 @@ import {
     Eye,
     EyeOff
 } from 'lucide-react';
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "./components/ui/dropdown-menu"  // Shadcn DropdownMenu
 //import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from 'framer-motion';
 
