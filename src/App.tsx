@@ -150,11 +150,11 @@ function App() {
       }
 
   return (
-    <div className="p-6">
-                <h1 className="text-2xl font-semibold mb-6">Keyboard Shortcut Editor</h1>
+    <div className="p-6 bg-background text-foreground">
+                <h1 className="text-2xl font-semibold mb-6 text-foreground">Keyboard Shortcut Editor</h1>
     
-                <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-                    <h2 className="text-xl font-semibold mb-4">
+                <div className="bg-card text-card-foreground rounded-lg shadow-md p-6 mb-8">
+                    <h2 className="text-xl font-semibold mb-4 text-card-foreground">
                         {isPreview ? title : "Table Title"}
                     </h2>
                     {!isPreview && (
