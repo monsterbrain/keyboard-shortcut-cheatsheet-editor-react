@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.dab91f42.css",
+    "main.css": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.43ade230.css",
     "main.js": "/keyboard-shortcut-cheatsheet-editor-react/static/js/main.d0c4bfb7.js",
     "static/js/453.b4f623e0.chunk.js": "/keyboard-shortcut-cheatsheet-editor-react/static/js/453.b4f623e0.chunk.js",
     "index.html": "/keyboard-shortcut-cheatsheet-editor-react/index.html",
-    "main.dab91f42.css.map": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.dab91f42.css.map",
+    "main.43ade230.css.map": "/keyboard-shortcut-cheatsheet-editor-react/static/css/main.43ade230.css.map",
     "main.d0c4bfb7.js.map": "/keyboard-shortcut-cheatsheet-editor-react/static/js/main.d0c4bfb7.js.map",
     "453.b4f623e0.chunk.js.map": "/keyboard-shortcut-cheatsheet-editor-react/static/js/453.b4f623e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dab91f42.css",
+    "static/css/main.43ade230.css",
     "static/js/main.d0c4bfb7.js"
   ]
 }
